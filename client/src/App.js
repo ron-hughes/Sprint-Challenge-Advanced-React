@@ -37,10 +37,10 @@ class App extends React.Component {
 
 
       <div className="list">
-     {this.state.women.map(x => {
+     {this.state.women.map((x, i) => {
        return (
 
-        <Card name={x.name} country={x.country} searches={x.searches} />
+        <Card name={x.name} key={i} country={x.country} searches={x.searches} />
 
   
        )
